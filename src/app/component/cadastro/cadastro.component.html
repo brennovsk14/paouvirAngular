@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cadastro</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<h1>PAOUVIR</h1>
+<p>Preencha os Campos para realizar seu cadastro</p>
+<div>
+  <form action="#" method="post">
+    <div id="cadastro">
+      <div id="nome-field">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div id="usuario-field">
+        <label for="username">Usuário:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div id="email-field">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div id="senha-field">
+        <label for="password">Senha:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div id="perfil-field">
+        <label for="perfil">Perfil:</label>
+        <select id="perfil" name="perfil" required>
+          <option value="">Selecione</option>
+          <option value="ouvinte">Ouvinte</option>
+          <option value="artista">Artista</option>
+          <option value="banda">Banda</option>
+        </select>
+      </div>
+      <button type="submit">Cadastrar</button>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
