@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import {BotaoComponent} from "../botao/botao.component";
 
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [],
+  imports: [BotaoComponent],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })

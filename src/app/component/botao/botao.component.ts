@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
 
 @Component({
   selector: 'app-botao',
@@ -8,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrl: './botao.component.css'
 })
 export class BotaoComponent {
+
+  @Input() texto: string = 'Botão';
+  @Input() tipo: string = 'login' | 'cadastro' | 'menu';
 
 }
