@@ -1,1 +1,21 @@
-<p>input works!</p>
+<div class="input-pacote">
+
+  <label *ngIf="label">{{ label }}</label>
+
+  <input
+    *ngIf="tipo !== 'select'"
+    [type]="tipo"
+    [placeholder]="placeholder"
+    class="input-base"
+  />
+
+  <select
+    *ngIf="tipo === 'select'"
+    class="input-base"
+  >
+    <option *ngFor="let opcao of opcoes" [value]="opcao.valor">
+      {{ opcao.perfil }}
+    </option>
+  </select>
+
+</div>

@@ -32,16 +32,12 @@
         <label for="password">Senha:</label>
         <input type="password" id="password" name="password" required>
       </div>
-      <div id="perfil-field">
-        <label for="perfil">Perfil:</label>
-        <select id="perfil" name="perfil" required>
-          <option value="">Selecione</option>
-          <option value="ouvinte">Ouvinte</option>
-          <option value="artista">Artista</option>
-          <option value="banda">Banda</option>
-        </select>
-      </div>
-      <button type="submit">Cadastrar</button>
+      <app-input
+        rotulo="Estado"
+        tipo="select"
+        [opcoes]="perfil">
+      </app-input>
+      <app-botao [tipo]="'cadastro'"></app-botao>
     </div>
   </form>
 </div>
