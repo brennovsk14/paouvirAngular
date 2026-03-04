@@ -1,4 +1,4 @@
-input {
+.input-base {
   display: flex;
   width: 445px;
   padding: 10px;
@@ -9,4 +9,19 @@ input {
   border: 3px solid rgba(198, 112, 248, 0.50);
   background: #FFFFFF;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.input-base:focus {
+  outline: none;
+  border-color: #8A38F5;
+  box-shadow: 0 0 5px rgba(138, 56, 245, 0.5);
+}
+
+label {
+  color: #000000;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }

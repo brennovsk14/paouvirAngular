@@ -1,1 +1,11 @@
-<button class="botao-base" [ngClass]="classeBotao">{{ textoBotao }}</button>
+<button class="botao-base" [ngClass]="classeBotao">
+
+  <ng-container *ngIf="texto; else conteudo">
+    {{ texto }}
+  </ng-container>
+
+  <ng-template #conteudo>
+    <ng-content></ng-content>
+  </ng-template>
+
+</button>

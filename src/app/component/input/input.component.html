@@ -13,6 +13,10 @@
     *ngIf="tipo === 'select'"
     class="input-base"
   >
+    <option value="" disabled selected>
+      {{ placeholder }}
+    </option>
+
     <option *ngFor="let opcao of opcoes" [value]="opcao.valor">
       {{ opcao.perfil }}
     </option>

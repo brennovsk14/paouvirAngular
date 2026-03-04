@@ -1,31 +1,22 @@
 import {Component, Input} from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-botao',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './botao.component.html',
   styleUrl: './botao.component.css'
 })
 export class BotaoComponent {
 
   @Input() texto?: string;
-  @Input() tipo?: 'login' | 'cadastro' | 'menu';
+  @Input() tipo?: string = 'primary';
+  @Input() link?: string;
 
-  get textoBotao(): string {
 
-    switch (this.tipo){
-      case'login':
-        return 'Entrar';
-      case 'cadastro':
-        return 'Cadastre-se';
-      case 'menu':
-        return 'menu';
-      default:
-        return this.texto || 'botão';
-    }
-  }
 
   get classeBotao(): string {
     return `botao-${this.tipo}`;
