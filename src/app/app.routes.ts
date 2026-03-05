@@ -4,6 +4,10 @@ import {CadastroComponent} from "./component/cadastro/cadastro.component";
 import {MenuComponent} from "./component/menu/menu.component";
 import {ViewLoginComponent} from "./views/view-login/view-login.component";
 import {ViewCadastroComponent} from "./views/view-cadastro/view-cadastro.component";
+import {ViewBandasComponent} from "./views/view-bandas/view-bandas.component";
+import {ViewAlbunsComponent} from "./views/view-albuns/view-albuns.component";
+import {ViewMusicasComponent} from "./views/view-musicas/view-musicas.component";
+import {ViewPlaylistsComponent} from "./views/view-playlists/view-playlists.component";
 
 export const routes: Routes = [
 
@@ -21,6 +25,26 @@ export const routes: Routes = [
   {
     path: 'menu',
     component: MenuComponent, // Layout público para rotas não autenticadas
+
+  },
+  {
+    path: 'bandas',
+    component: ViewBandasComponent,
+
+  },
+  {
+    path: 'albuns',
+    component: ViewAlbunsComponent,
+
+  },
+  {
+    path: 'musicas',
+    component: ViewMusicasComponent,
+
+  },
+  {
+    path: 'playlists',
+    component: ViewPlaylistsComponent,
 
   },
 
