@@ -14,7 +14,7 @@ import { RouterModule } from '@angular/router';
 export class InputComponent {
 
   @Input() label?: string;
-  @Input() tipo: 'text' | 'date' | 'password' | 'email' |'select'|'username' = 'text';
+  @Input() tipo: 'text' | 'date' | 'password' | 'email' |'select'|'username'| 'busca' = 'text';
   @Input() placeholder?: string;
   @Input() opcoes?: { perfil: string; valor: string }[];
 
