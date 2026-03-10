@@ -20,4 +20,8 @@ export class LoginComponent {
     this.router.navigate(['/menu']);
   }
 
+  cadastrarPaouvir() {
+    this.router.navigate(['/cadastro']);
+  }
+
 }

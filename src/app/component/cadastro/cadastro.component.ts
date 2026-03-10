@@ -14,10 +14,16 @@ import {InputComponent} from "../input/input.component";
 })
 export class CadastroComponent {
 
+  constructor(private router: Router) {}
+
   perfil = [
     { perfil: 'Banda', valor: 'bd' },
     { perfil: 'Artista', valor: 'at' },
     { perfil: 'Ouvinte', valor: 'ov' }
   ];
+
+  acessarLogin() {
+    this.router.navigate(['']);
+  }
 
 }

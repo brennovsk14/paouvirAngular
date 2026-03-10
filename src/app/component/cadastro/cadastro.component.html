@@ -45,18 +45,19 @@
         placeholder="Digite sua senha">
       </app-input>
 
-      <app-input
-        class = input-pacote
-        label="Perfil"
-        tipo="select"
-        [opcoes]="perfil"
-        placeholder="Selecione seu perfil">
-      </app-input>
+<!--      <app-input-->
+<!--        class = input-pacote-->
+<!--        label="Perfil"-->
+<!--        tipo="select"-->
+<!--        [opcoes]="perfil"-->
+<!--        placeholder="Selecione seu perfil">-->
+<!--      </app-input>-->
 
-      <app-botao [tipo]="'cadastro'">
+      <app-botao [tipo]="'cadastro'" (click)="acessarLogin()">
         Cadastrar
       </app-botao>
-      <app-botao [tipo] = "'menu'">
+
+      <app-botao [tipo] = "'menu'" (click)="acessarLogin()">
         Já tenho cadastro
       </app-botao>
 

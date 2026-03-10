@@ -1,29 +1,33 @@
 <div class="sidenav">
   <img src="../../../assets/imagens/logoTituloPq.png" alt="Logo Paouvir Branco">
   <nav>
-    <app-botao-sidenav link="/menu">
+    <app-botao-sidenav
+      routerLink="/menu" routerLinkActive="ativo"
+      link="/menu">
       <i class="bi bi-house-door"></i>
       Ínicio
     </app-botao-sidenav>
 
-    <app-botao-sidenav  link="/bandas">
-      <i class="bi bi-disc"></i>
+    <app-botao-sidenav
+      routerLink="/bandas" routerLinkActive="ativo"
+      link="/bandas">
+      <i class="bi bi-mic-fill"></i>
       Bandas
     </app-botao-sidenav>
 
-    <app-botao-sidenav  link="/albuns">
-      <i class="bi bi-mic-fill"></i>
+    <app-botao-sidenav
+      routerLink="/albuns" routerLinkActive="ativo"
+      link="/albuns">
+      <i class="bi bi-disc"></i>
       Albuns
     </app-botao-sidenav>
 
-    <app-botao-sidenav  link="/musicas">
+    <app-botao-sidenav
+      routerLink="/musicas" routerLinkActive="ativo"
+      link="/musicas">
       <i class="bi bi-music-note"></i>
       Músicas
     </app-botao-sidenav>
 
-    <app-botao-sidenav  link="/playlists">
-      <i class="bi bi-music-note-list"></i>
-      Playlists
-    </app-botao-sidenav>
   </nav>
 </div>
