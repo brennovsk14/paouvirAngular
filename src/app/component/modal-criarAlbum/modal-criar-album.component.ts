@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, Output, EventEmitter} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 import { RouterModule } from '@angular/router';
@@ -13,15 +13,15 @@ import {InputComponent} from "../input/input.component";
   templateUrl: './modal-criar-album.component.html',
   styleUrl: './modal-criar-album.component.css'
 })
+
 export class ModalCriarAlbumComponent {
+
   modalAberto = false;
 
-  abrirModal() {
-    this.modalAberto = true;
-  }
+  // @ts-ignore
+  @Output() fechar = new EventEmitter<void>();
 
   fecharModal() {
-    this.modalAberto = false;
+    this.fechar.emit();
   }
-
 }

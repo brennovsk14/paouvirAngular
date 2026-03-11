@@ -67,7 +67,7 @@
 
           <div id="abaAlbuns">
             <span>Meus Albuns</span>
-            <app-botao [tipo]="'criar'"  (click)="abrirModal()">
+            <app-botao [tipo]="'criar'" (click)="abrirModal()">
               <i class="bi bi-plus-circle"></i>
               Criar Álbum
             </app-botao>
@@ -106,6 +106,16 @@
       </div>
 
     </section>
+
+    <app-modal-criar-album
+      *ngIf="modalAlbumAberto"
+      (fechar)="fecharModal()">
+    </app-modal-criar-album>
+
+    <app-modal-criar-banda
+      *ngIf="modalAberto"
+      (fechar)="fecharModal()">
+    </app-modal-criar-banda>
 
   </main>
 </body>

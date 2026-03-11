@@ -1,28 +1,32 @@
-<div class = "modal-backdrop" *ngIf="modalAberto" (click)="fecharModal()">
+<div class = "modal-backdrop" (click)="fecharModal()">
 
   <div class="modalConteudo" (click)="$event.stopPropagation()">
 
     <div class="modal-header">
       <h2>Criar Álbum</h2>
-      <button class="close-button" (click)="fecharModal()">
-        <i class="bi bi-mic-close" ></i>
-      </button>
     </div>
 
     <div class="modalBody">
-      <form> //(ngSubmit)="criarAlbum()"//
+      <form>
         <div class="form-group">
+          <app-input></app-input>
+          <app-input></app-input>
           <app-input></app-input>
           <app-input></app-input>
         </div>
 
-        <div class="form-group">
-          <app-input></app-input>
-          <app-input></app-input>
+        <div class="form-botoes">
+        <app-botao [tipo]="'cancelar'" (click)="fecharModal()">
+          <i class="bi bi-x-circle"></i>
+          Cancelar
+        </app-botao>
+
+        <app-botao [tipo]="'criar'">
+          <i class="bi bi-check-lg"></i>
+          Salvar
+        </app-botao>
         </div>
 
-        <app-botao></app-botao>
-        <app-botao></app-botao>
       </form>
     </div>
   </div>

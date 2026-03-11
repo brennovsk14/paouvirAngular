@@ -1,9 +1,33 @@
-<div class = "modal-criar-musica">
+<div class = "modal-backdrop" (click)="fecharModal()">
 
-  <div class="modal-conteudo">
-    <h2>Modal de Criar Música</h2>
-    <p>Este é um modal para criar uma nova música.</p>
-    <button (click)="fecharModal()">Fechar Modal</button>
+  <div class="modalConteudo" (click)="$event.stopPropagation()">
+
+    <div class="modal-header">
+      <h2>Criar Música</h2>
+    </div>
+
+    <div class="modalBody">
+      <form>
+        <div class="form-group">
+          <app-input></app-input>
+          <app-input></app-input>
+          <app-input></app-input>
+          <app-input></app-input>
+        </div>
+
+        <div class="form-botoes">
+          <app-botao [tipo]="'cancelar'" (click)="fecharModal()">
+            <i class="bi bi-x-circle"></i>
+            Cancelar
+          </app-botao>
+
+          <app-botao [tipo]="'criar'">
+            <i class="bi bi-check-lg"></i>
+            Salvar
+          </app-botao>
+        </div>
+
+      </form>
+    </div>
   </div>
-
 </div>
