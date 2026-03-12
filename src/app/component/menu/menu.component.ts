@@ -7,25 +7,33 @@ import {BotaoSidenavComponent} from "../botao-sidenav/botao-sidenav.component";
 import {BotaoComponent} from "../botao/botao.component";
 import {ModalCriarAlbumComponent} from "../modal-criarAlbum/modal-criar-album.component";
 import {ModalCriarBandaComponent} from "../modal-criarBanda/modal-criar-banda.component";
+import {CardComponent} from "../card/card.component";
 
 @Component({
   selector: 'app-menu',
   standalone: true,
-  imports: [CommonModule, RouterModule, SidenavComponent, BotaoComponent, ModalCriarAlbumComponent, ModalCriarBandaComponent],
+  imports: [CommonModule, RouterModule, SidenavComponent, BotaoComponent, ModalCriarAlbumComponent, ModalCriarBandaComponent, CardComponent],
   templateUrl: './menu.component.html',
   styleUrl: './menu.component.css'
 })
 export class MenuComponent {
 
-  modalAberto = false;
+  modalBandaAberto = false;
   modalAlbumAberto = false;
 
 
-  abrirModal() {
-    this.modalAberto = true;
+  abrirModalAlbum() {
+    this.modalAlbumAberto = true;
   }
-  fecharModal() {
-    this.modalAberto = false;
+  fecharModalAlbum() {
+    this.modalAlbumAberto = false;
+  }
+
+  abrirModalBanda() {
+    this.modalBandaAberto = true;
+  }
+  fecharModalBanda() {
+    this.modalBandaAberto = false;
   }
 
 }

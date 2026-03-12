@@ -22,83 +22,71 @@
 
       <div id="inicio">
 
-        <div id="caixaBandas">
-
-          <div id="abaBandas">
+        <div class="caixaBandas">
+          <div class="criarBandas">
             <span>Minhas Bandas</span>
-            <app-botao [tipo]="'criar'">
+            <app-botao [tipo]="'criar'" (click)="abrirModalBanda()">
               <i class="bi bi-plus-circle"></i>
               Criar Banda
             </app-botao>
           </div>
 
-          <div id="carrosselBandas">
+          <div class="contentBandas">
 
-            <div id="b1">
-              <img src="../../../assets/imagens/bandasFaixas.png" alt="Banda 1">
-              <p>Banda 1</p>
-            </div>
+            <app-card [tipo]="'content'" routerLink="/bandatal" link="/bandatal">
+              Banda 1
+            </app-card>
 
-            <div id="b2">
-              <img src="../../../assets/imagens/bandasFaixas.png" alt="Banda 1">
-              <p>Banda 2</p>
-            </div>
+            <app-card [tipo]="'content'">
+              Banda 2
+            </app-card>
 
-            <div id="b3">
-              <img src="../../../assets/imagens/bandasFaixas.png">
-              <p>Banda 3</p>
-            </div>
+            <app-card [tipo]="'content'">
+              Banda 3
+            </app-card>
 
-            <div id="b4">
-              <img src="../../../assets/imagens/bandasFaixas.png">
-              <p>Banda 4</p>
-            </div>
+            <app-card [tipo]="'content'">
+              Banda 4
+            </app-card>
 
-            <div id="b5">
-              <img src="../../../assets/imagens/bandasFaixas.png">
-              <p>Banda 5</p>
-            </div>
+            <app-card [tipo]="'content'">
+              Banda 5
+            </app-card>
 
           </div>
-
         </div>
 
-        <div id="caixaAlbuns">
+        <div class="caixaAlbuns">
 
-          <div id="abaAlbuns">
+          <div class="criarAlbuns">
             <span>Meus Albuns</span>
-            <app-botao [tipo]="'criar'" (click)="abrirModal()">
+            <app-botao [tipo]="'criar'" (click)="abrirModalAlbum()">
               <i class="bi bi-plus-circle"></i>
               Criar Álbum
             </app-botao>
           </div>
 
-          <div id="carrosselAlbuns">
+          <div class="contentAlbuns">
 
-            <div id="a1">
-              <img src="../../../assets/imagens/bandasFaixas.png" alt="Banda 1">
-              <p>Album 1</p>
-            </div>
+            <app-card [tipo]="'content'" routerLink="/albumtal" link="/albumtal">
+              Álbum 1
+            </app-card>
 
-            <div id="a2">
-              <img src="../../../assets/imagens/bandasFaixas.png">
-              <p>Album 2</p>
-            </div>
+            <app-card [tipo]="'content'">
+              Álbum 2
+            </app-card>
 
-            <div id="a3">
-              <img src="../../../assets/imagens/bandasFaixas.png">
-              <p>Album 3</p>
-            </div>
+            <app-card [tipo]="'content'">
+              Álbum 3
+            </app-card>
 
-            <div id="a4">
-              <img src="../../../assets/imagens/bandasFaixas.png">
-              <p>Album 4</p>
-            </div>
+            <app-card [tipo]="'content'">
+              Álbum 4
+            </app-card>
 
-            <div id="a5">
-              <img src="../../../assets/imagens/bandasFaixas.png">
-              <p>Album 5</p>
-          </div>
+            <app-card [tipo]="'content'">
+              Álbum 5
+            </app-card>
 
           </div>
         </div>
@@ -109,12 +97,12 @@
 
     <app-modal-criar-album
       *ngIf="modalAlbumAberto"
-      (fechar)="fecharModal()">
+      (fechar)="fecharModalAlbum()">
     </app-modal-criar-album>
 
     <app-modal-criar-banda
-      *ngIf="modalAberto"
-      (fechar)="fecharModal()">
+      *ngIf="modalBandaAberto"
+      (fechar)="fecharModalBanda()">
     </app-modal-criar-banda>
 
   </main>

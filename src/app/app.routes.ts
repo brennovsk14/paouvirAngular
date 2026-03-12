@@ -7,6 +7,8 @@ import {ViewCadastroComponent} from "./views/view-cadastro/view-cadastro.compone
 import {ViewBandasComponent} from "./views/view-bandas/view-bandas.component";
 import {ViewAlbunsComponent} from "./views/view-albuns/view-albuns.component";
 import {ViewMusicasComponent} from "./views/view-musicas/view-musicas.component";
+import {ViewUmAlbumComponent} from "./views/view-um-album/view-um-album.component";
+import {ViewUmaBandaComponent} from "./views/view-uma-banda/view-uma-banda.component";
 
 export const routes: Routes = [
 
@@ -39,6 +41,18 @@ export const routes: Routes = [
   {
     path: 'musicas',
     component: ViewMusicasComponent,
+
+  },
+
+  {
+    path: 'albumtal',
+    component: ViewUmAlbumComponent,
+
+  },
+
+  {
+    path: 'bandatal',
+    component: ViewUmaBandaComponent,
 
   },
 

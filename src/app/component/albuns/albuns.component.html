@@ -13,17 +13,56 @@
 
 </head>
 <body>
-<app-sidenav></app-sidenav>
+<aside>
+  <app-sidenav></app-sidenav>
+</aside>
 <main>
 
   <section>
-    <div>
-      <div>
-        <h2>Albuns</h2>
-      </div>
+
+    <div class="titulo">
+      <h2>Albuns</h2>
     </div>
+
+    <div class ="input-botoes">
+      <app-input></app-input>
+
+      <app-botao tipo="criar" (click)="abrirModalAlbum()">
+        <i class="bi bi-plus-circle"></i>
+        Criar Album
+      </app-botao>
+    </div>
+
+    <div class="containerAlbuns">
+      <app-card [tipo]="'content'" routerLink="/albumtal" link="/albumtal">
+        Álbum 1
+      </app-card>
+
+      <app-card [tipo]="'content'">
+        Álbum 2
+      </app-card>
+
+      <app-card [tipo]="'content'">
+        Álbum 3
+      </app-card>
+
+      <app-card [tipo]="'content'">
+        Álbum 4
+      </app-card>
+
+      <app-card [tipo]="'content'">
+        Álbum 5
+      </app-card>
+    </div>
+
   </section>
 
 </main>
+
+  <app-modal-criar-album
+  *ngIf="modalAlbumAberto"
+  (fechar)="fecharModalAlbum()">
+  </app-modal-criar-album>
+
 </body>
 </html>

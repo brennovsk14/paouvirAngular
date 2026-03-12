@@ -13,17 +13,57 @@
 
 </head>
 <body>
-<app-sidenav></app-sidenav>
-<main>
+  <aside>
+    <app-sidenav></app-sidenav>
+  </aside>
+  <main>
 
-  <section>
-    <div>
-      <div>
+    <section>
+
+      <div class="titulo">
         <h2>Músicas</h2>
       </div>
-    </div>
-  </section>
 
-</main>
+      <div class ="input-botoes">
+        <app-input></app-input>
+
+        <app-botao tipo="criar" (click)="abrirModalMusica()">
+         <i class="bi bi-plus-circle"></i>
+          Criar Música
+        </app-botao>
+
+      </div>
+
+      <div class="containerMusicas">
+        <app-card [tipo]="'content'">
+          Música 1
+        </app-card>
+
+        <app-card [tipo]="'content'">
+          Música 2
+        </app-card>
+
+        <app-card [tipo]="'content'">
+          Música 3
+        </app-card>
+
+        <app-card [tipo]="'content'">
+          Música 4
+        </app-card>
+
+        <app-card [tipo]="'content'">
+          Música 5
+        </app-card>
+      </div>
+
+    </section>
+
+  </main>
+
+  <app-modal-criar-musica
+    *ngIf="modalMusicaAberto"
+    (fechar)="fecharModalMusica()">
+  </app-modal-criar-musica>
+
 </body>
 </html>

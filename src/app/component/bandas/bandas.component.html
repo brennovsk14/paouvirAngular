@@ -13,17 +13,57 @@
 
 </head>
 <body>
-<app-sidenav></app-sidenav>
-<main>
+  <aside>
+    <app-sidenav></app-sidenav>
+  </aside>
+  <main>
 
-  <section>
-    <div>
-      <div>
+    <section>
+
+      <div class="titulo">
         <h2>Bandas</h2>
       </div>
-    </div>
-  </section>
 
-</main>
+      <div class ="input-botoes">
+        <app-input></app-input>
+
+        <app-botao tipo="criar" (click)="abrirModalBanda()">
+         <i class="bi bi-plus-circle"></i>
+          Criar Banda
+       </app-botao>
+
+      </div>
+
+      <div class="containerBandas">
+        <app-card [tipo]="'content'" routerLink="/bandatal" link="/bandatal">
+          Banda 1
+        </app-card>
+
+        <app-card [tipo]="'content'">
+          Banda 2
+        </app-card>
+
+        <app-card [tipo]="'content'">
+          Banda 3
+        </app-card>
+
+        <app-card [tipo]="'content'">
+          Banda 4
+        </app-card>
+
+        <app-card [tipo]="'content'">
+          Banda 5
+        </app-card>
+      </div>
+
+    </section>
+
+  </main>
+
+  <app-modal-criar-banda
+    *ngIf="modalBandaAberto"
+    (fechar)="fecharModalBanda()">
+  </app-modal-criar-banda>
+
 </body>
 </html>
