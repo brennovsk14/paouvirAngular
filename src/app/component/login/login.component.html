@@ -32,15 +32,17 @@
           placeholder ="Digite sua senha">
         </app-input>
 
-        <app-botao [tipo]="'login'" (click)="acessarPaouvir()">
-            Entrar
-        </app-botao>
-
-        <app-botao [tipo]="'cadastro'" (click)="cadastrarPaouvir()">
-            Cadastre-se
-        </app-botao>
-
         </form>
+
+        <div class="containerBotoes">
+          <app-botao [tipo]="'login'" (click)="acessarPaouvir()">
+            Entrar
+          </app-botao>
+
+          <app-botao [tipo]="'cadastro'" (click)="cadastrarPaouvir()">
+            Cadastre-se
+          </app-botao>
+        </div>
 
     </div>
   </div>
