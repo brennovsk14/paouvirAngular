@@ -2,9 +2,9 @@ import {Component, Output, EventEmitter, model} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 import { RouterModule } from '@angular/router';
-import {BotaoComponent} from "../botao/botao.component";
+import {BotaoComponent} from "../../component/botao/botao.component";
 import {FormsModule} from "@angular/forms";
-import {InputComponent} from "../input/input.component";
+import {InputComponent} from "../../component/input/input.component";
 
 @Component({
   selector: 'app-modal-criar-album',

@@ -6,7 +6,7 @@ import {SidenavComponent} from "../sidenav/sidenav.component";
 import {BotaoComponent} from "../botao/botao.component";
 import {InputComponent} from "../input/input.component";
 import {CardComponent} from "../card/card.component";
-import {ModalCriarAlbumComponent} from "../modal-criarAlbum/modal-criar-album.component";
+import {ModalCriarAlbumComponent} from "../../modals/modal-criarAlbum/modal-criar-album.component";
 
 @Component({
   selector: 'app-albuns',

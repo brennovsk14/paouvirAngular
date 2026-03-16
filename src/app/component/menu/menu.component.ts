@@ -5,8 +5,8 @@ import { RouterModule } from '@angular/router';
 import {SidenavComponent} from "../sidenav/sidenav.component";
 import {BotaoSidenavComponent} from "../botao-sidenav/botao-sidenav.component";
 import {BotaoComponent} from "../botao/botao.component";
-import {ModalCriarAlbumComponent} from "../modal-criarAlbum/modal-criar-album.component";
-import {ModalCriarBandaComponent} from "../modal-criarBanda/modal-criar-banda.component";
+import {ModalCriarAlbumComponent} from "../../modals/modal-criarAlbum/modal-criar-album.component";
+import {ModalCriarBandaComponent} from "../../modals/modal-criarBanda/modal-criar-banda.component";
 import {CardComponent} from "../card/card.component";
 
 @Component({

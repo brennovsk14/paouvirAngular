@@ -6,7 +6,7 @@ import {SidenavComponent} from "../sidenav/sidenav.component";
 import {InputComponent} from "../input/input.component";
 import {BotaoComponent} from "../botao/botao.component";
 import {CardComponent} from "../card/card.component";
-import {ModalCriarBandaComponent} from "../modal-criarBanda/modal-criar-banda.component";
+import {ModalCriarBandaComponent} from "../../modals/modal-criarBanda/modal-criar-banda.component";
 
 @Component({
   selector: 'app-bandas',

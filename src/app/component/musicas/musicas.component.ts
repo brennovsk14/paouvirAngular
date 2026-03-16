@@ -6,8 +6,8 @@ import {SidenavComponent} from "../sidenav/sidenav.component";
 import {BotaoComponent} from "../botao/botao.component";
 import {InputComponent} from "../input/input.component";
 import {CardComponent} from "../card/card.component";
-import {ModalCriarMusicaComponent} from "../modal-criarMusica/modal-criar-musica.component";
-import {ModalCriarBandaComponent} from "../modal-criarBanda/modal-criar-banda.component";
+import {ModalCriarMusicaComponent} from "../../modals/modal-criarMusica/modal-criar-musica.component";
+import {ModalCriarBandaComponent} from "../../modals/modal-criarBanda/modal-criar-banda.component";
 
 @Component({
   selector: 'app-musicas',
