@@ -11,23 +11,20 @@
   flex-shrink: 0;
   align-self: stretch;
 
-  border-right: 5px solid #8F02E0;
-  background: linear-gradient(180deg, #390058 0%, #7B00BE 100%);
-  box-shadow: 0 4px 4px 2px rgba(0, 0, 0, 0.25);
+  background: var(--color-surface-container-low);
   width: 280px;
   height: 100vh;
+  /* No borders, use tonal shift */
 }
 
 nav {
   display: flex;
   flex-direction: column;
-  gap: 1px;
+  gap: var(--spacing-6);
   margin-top: 30px;
 }
 
 .ativo {
-  border-bottom: 1px solid #FFFFFF;
-  background-color: #8F02E0;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background: var(--color-surface-container-highest);
+  /* No border, use tonal shift */
 }
-

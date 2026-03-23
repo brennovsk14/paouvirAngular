@@ -1,11 +1,10 @@
-
 body {
   display: flex;
   width: 100%;
   height: 100vh;
   align-items: flex-start;
-  background-color: #F7F2FF;
-  font-family: Jura, sans-serif;
+  background-color: var(--color-surface);
+  font-family: var(--font-body);
   margin: 0;
 }
 
@@ -20,14 +19,13 @@ main {
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  /*flex: 1 0 0;*/
 }
 
 span {
-  color: #8E02E0;
+  color: var(--color-primary);
 
   text-align: left;
-  font-family: Jura, sans-serif;
+  font-family: var(--font-body);
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -41,6 +39,9 @@ section {
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  background: var(--color-surface-container-low);
+  padding: var(--spacing-12);
+  border-radius: var(--rounded-lg);
 }
 
 #inicio {
@@ -64,8 +65,8 @@ section {
   align-items: flex-start;
   gap: 10px;
   align-self: stretch;
-
-  border-radius: 15px;
+  background: var(--color-surface-container-lowest);
+  border-radius: var(--rounded-lg);
 }
 
 .criarBandas {
@@ -78,7 +79,6 @@ section {
   text-align: left;
 }
 
-
 .caixaAlbuns {
   width: 100%;
   height: 386px;
@@ -89,8 +89,8 @@ section {
   align-items: flex-start;
   gap: 10px;
   align-self: stretch;
-
-  border-radius: 15px;
+  background: var(--color-surface-container-lowest);
+  border-radius: var(--rounded-lg);
 }
 
 .criarAlbuns {

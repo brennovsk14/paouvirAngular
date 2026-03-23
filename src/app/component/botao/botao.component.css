@@ -6,82 +6,66 @@
     align-items: center;
     gap: 10px;
     white-space: nowrap;
-    font-family: Jura, sans-serif;
-    border-radius: 15px;
+    font-family: var(--font-body);
+    border-radius: var(--rounded-xl);
     font-size: 22px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    color: #FFFFFF;
+    color: var(--color-on-primary);
   }
 
 .botao-login {
-  background: #8A38F5;
-  color: #FFFFFF;
-  border: 2px solid #8A38F5;
-
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-container));
+  color: var(--color-on-primary);
+  border: none;
+  transition: transform 0.2s;
 }
 
 .botao-login:hover {
-  /*background-color: #C670F8;*/
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  border: 2px solid #390058;
+  transform: scale(1.02);
 }
 
-.botao-cadastro{
-  background: #390058;
-  color: #FFFFFF;
-  border: 2px solid #390058;
-}
-
-.botao-cadastro:hover {
-  /*background-color: #C670F8;*/
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  border: 2px solid #8A38F5;
+.botao-cadastro {
+  background: var(--color-surface-container-highest);
+  color: var(--color-primary);
+  border: none;
 }
 
 .botao-menu {
-  background: #8A38F5;
-  border: 2px solid #390058;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-container));
+  color: var(--color-on-primary);
+  border: none;
+  transition: transform 0.2s;
 }
 
 .botao-menu:hover {
-  /*background-color: #C670F8;*/
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  border: 2px solid #390058;
+  transform: scale(1.02);
 }
 
 .botao-criar {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-container));
+  color: var(--color-on-primary);
+  border: none;
   padding-bottom: 20px;
   padding-top: 20px;
-  border-radius: 12px;
+  border-radius: var(--rounded-lg);
   height: 30px;
-  background: #8A38F5;
-  border: 2px solid #390058;
   gap: 7px;
+  transition: transform 0.2s;
 }
 
 .botao-criar:hover {
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  height: 30px;
-  background: #8A38F5;
-  border: 2px solid #390058;
+  transform: scale(1.02);
 }
 
 .botao-cancelar {
+  background: none;
+  color: var(--color-primary);
+  border: none;
   padding-bottom: 20px;
   padding-top: 20px;
-  border-radius: 12px;
+  border-radius: var(--rounded-lg);
   height: 30px;
-  background: #ffffff;
-  border: 2px solid #390058;
-  color: #8A38F5;
   gap: 7px;
-}
-
-.botao-cancelar:hover {
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  height: 30px;
-  background: #ffffff;
-  border: 2px solid #390058;
 }

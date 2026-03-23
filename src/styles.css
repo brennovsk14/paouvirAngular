@@ -1,5 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
+
+:root {
+  /* Colors */
+  --color-surface: #f9f5ff;
+  --color-surface-container-low: #f3effa;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-highest: #e8e3f0;
+  --color-surface-bright: #faf7ff;
+  --color-surface-variant: #f9f5ff;
+  --color-primary: #8628c4;
+  --color-primary-container: #cb80ff;
+  --color-on-primary: #fceeff;
+  --color-tertiary: #6c5a00;
+  --color-on-surface: #2f2e35;
+  --color-outline-variant: #aeacb5;
+  --color-on-surface-variant: #2f2e35;
+
+  /* Fonts */
+  --font-display: 'Plus Jakarta Sans', sans-serif;
+  --font-body: 'Manrope', sans-serif;
+
+  /* Typography Sizes (inferred) */
+  --text-display-lg: 3rem;
+  --text-headline-sm: 1.5rem;
+  --text-title-md: 1.25rem;
+  --text-body-sm: 0.875rem;
+  --text-label-md: 0.875rem;
+
+  /* Spacing */
+  --spacing-6: 1.5rem;
+  --spacing-12: 3rem;
+  --spacing-16: 4rem;
+
+  /* Roundedness */
+  --rounded-md: 0.5rem;
+  --rounded-lg: 1rem;
+  --rounded-xl: 1.5rem;
+  --rounded-full: 9999px;
+
+  /* Shadows */
+  --shadow-primary: 0px 12px 32px rgba(134, 40, 196, 0.08);
+
+  /* RGB for glassmorphism */
+  --surface-variant-rgb: 249, 245, 255;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}/* You can add global styles to this file, and also import other style files */
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-surface);
+  color: var(--color-on-surface);
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 600;
+}
+
+button {
+  font-family: inherit;
+}
+
+/* Glassmorphism class */
+.glass {
+  background: rgba(var(--surface-variant-rgb), 0.6);
+  backdrop-filter: blur(24px);
+  border-radius: var(--rounded-lg);
+}
+
+/* Primary button gradient */
+.btn-primary {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-container));
+  color: var(--color-on-primary);
+  border: none;
+  border-radius: var(--rounded-xl);
+  padding: 0.75rem 1.5rem;
+  font-size: 1.125rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.btn-primary:hover {
+  transform: scale(1.02);
+}
+
+/* Secondary button */
+.btn-secondary {
+  background: var(--color-surface-container-highest);
+  color: var(--color-primary);
+  border: none;
+  border-radius: var(--rounded-xl);
+  padding: 0.75rem 1.5rem;
+  font-size: 1.125rem;
+  cursor: pointer;
+}
+
+/* Tertiary button */
+.btn-tertiary {
+  background: none;
+  color: var(--color-primary);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.125rem;
+  cursor: pointer;
+}
+
+/* Input fields */
+.input-field {
+  background: var(--color-surface-container-low);
+  border: none;
+  border-radius: var(--rounded-md);
+  padding: 0.75rem;
+  font-family: var(--font-body);
+  color: var(--color-on-surface);
+  outline: none;
+  transition: box-shadow 0.2s, border 0.2s;
+}
+
+.input-field:focus {
+  box-shadow: var(--shadow-primary);
+  border: 1px solid rgba(var(--color-outline-variant), 1);
+}
+
+/* Cards */
+.card {
+  background: var(--color-surface-container-lowest);
+  border-radius: var(--rounded-lg);
+  padding: 1rem;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  background: var(--color-surface-bright);
+}
+
+/* No borders rule - use tonal shifts */
+.section {
+  background: var(--color-surface-container-low);
+  padding: var(--spacing-12);
+}
+
+/* Page margins */
+.page {
+  margin: var(--spacing-16);
+}

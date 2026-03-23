@@ -11,8 +11,8 @@ body {
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
-  font-family: Jura, sans-serif;
-  background-image: linear-gradient(180deg, #4A106A 0%, #F3F3F3 100%);;
+  font-family: var(--font-body);
+  background: var(--color-surface);
 }
 
 #container {
@@ -32,17 +32,16 @@ body {
   justify-content: center;
   align-items: center;
   gap: 10px;
-
-  border-radius: 30px;
-  border: 5px solid #C670F8;
-  background: #F3F3F3;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background: var(--color-surface-container-lowest);
+  border-radius: var(--rounded-lg);
+  box-shadow: var(--shadow-primary);
 }
 
 h2 {
-  color: #8E02E0;
+  color: var(--color-primary);
   text-align: center;
   font-size: 48px;
+  font-family: var(--font-display);
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -63,7 +62,6 @@ form {
   justify-content: center;
   align-items: center;
   gap: 30px;
-  /*align-self: stretch;*/
 }
 
 #div-botoes {
@@ -73,7 +71,7 @@ form {
   gap: 5px;
 }
 
-.containerBotoes{
+.containerBotoes {
   display: flex;
   margin-top: 50px;
   gap: 20px;

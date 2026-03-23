@@ -3,11 +3,20 @@
   width: 250px;
   flex-direction: column;
   align-items: center;
-
-  color: #390058;
+  background: var(--color-surface-container-lowest);
+  border-radius: var(--rounded-lg);
+  padding: 1rem;
+  color: var(--color-on-surface);
   text-align: center;
-  font-size: 24px;
+  font-size: var(--text-title-md);
+  font-family: var(--font-body);
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.content:hover {
+  transform: scale(1.02);
+  background: var(--color-surface-bright);
 }

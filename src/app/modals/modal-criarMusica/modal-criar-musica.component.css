@@ -25,10 +25,11 @@
   align-items: center;
   gap: 10px;
 
-  border-radius: 30px;
-  border: 2px solid #FFFFFF;
-  background: linear-gradient(180deg, #390058 0%, #7B00BE 100%);
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background: rgba(var(--surface-variant-rgb), 0.6);
+  backdrop-filter: blur(24px);
+
+  border-radius: var(--rounded-lg);
+  box-shadow: var(--shadow-primary);
 }
 
 .modal-header {
@@ -36,12 +37,11 @@
   height: 25px;
   align-items: center;
   gap: 2px;
-  margin: 20px;
-  /*align-self: stretch;*/
+  margin: 25px;
 
-  color: #6B01A6;
+  color: var(--color-primary);
   text-align: center;
-  font-family: Jura, sans-serif;
+  font-family: var(--font-display);
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
@@ -60,18 +60,18 @@ form {
 .form-group {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 10px;
 }
 
-.form-botoes{
+.form-botoes {
   display: flex;
   gap: 20px;
 }
 
-h2{
-  color: #FFFFFF;
+h2 {
+  color: var(--color-on-surface);
   text-align: center;
-  font-family: Jura, sans-serif;
+  font-family: var(--font-display);
   font-size: 36px;
   font-style: normal;
   font-weight: 700;

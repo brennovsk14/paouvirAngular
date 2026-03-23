@@ -1,9 +1,9 @@
 .botao-sidenav {
-  color: #FFFFFF;
+  color: var(--color-on-surface);
   font-size: 32px;
   font-style: normal;
   font-weight: 500;
-  font-family: Jura, sans-serif;
+  font-family: var(--font-body);
   line-height: normal;
   text-decoration: none;
   background-color: transparent;
@@ -15,11 +15,11 @@
   padding-left: 20px;
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 10px;
+  cursor: pointer;
+  transition: background 0.2s;
 }
 
 .botao-sidenav:hover {
-  background-color: #8F02E0;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background: var(--color-surface-container-highest);
 }
-
