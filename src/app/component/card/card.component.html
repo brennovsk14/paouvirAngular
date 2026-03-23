@@ -1,0 +1,12 @@
+<div class="content"  [ngClass]="classeCard">
+  <img src="../../../assets/imagens/bandasFaixas.png" alt="Banda 1">
+
+  <ng-container *ngIf="texto; else conteudo">
+    {{ texto }}
+  </ng-container>
+
+  <ng-template #conteudo>
+    <ng-content></ng-content>
+  </ng-template>
+
+</div>
