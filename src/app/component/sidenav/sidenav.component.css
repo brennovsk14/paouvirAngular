@@ -11,7 +11,7 @@
   flex-shrink: 0;
   align-self: stretch;
 
-  background: var(--color-surface-container-low);
+  background: linear-gradient(180deg, #4D007A 0%, #C067FF 100%);
   width: 280px;
   height: 100vh;
   /* No borders, use tonal shift */
