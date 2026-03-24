@@ -1,5 +1,5 @@
 .botao-sidenav {
-  color: var(--color-on-surface);
+  color: #FFFFFF;
   font-size: 32px;
   font-style: normal;
   font-weight: 500;
@@ -21,5 +21,5 @@
 }
 
 .botao-sidenav:hover {
-  background: var(--color-surface-container-highest);
+  background: #4D007A;
 }
